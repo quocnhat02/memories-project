@@ -12,12 +12,14 @@ const Form = () => {
 
   const handleSubmit = () => {};
 
+  const clear = () => {};
+
   return (
     <Paper style={styleComponent.paper}>
       <form
         autoComplete="off"
         noValidate
-        style={styleComponent.form}
+        style={`${styleComponent.root} ${styleComponent.form}`}
         onSubmit={handleSubmit}
       >
         <Typography variant="h6">Creating a Memory</Typography>
@@ -70,13 +72,22 @@ const Form = () => {
 
         <Button
           style={styleComponent.buttonSubmit}
-          variant="container"
+          variant="contained"
           color="primary"
           size="large"
           type="submit"
           fullWidth
         >
           Submit
+        </Button>
+        <Button
+          variant="contained"
+          color="secondary"
+          size="small"
+          onClick={clear}
+          fullWidth
+        >
+          Clear
         </Button>
       </form>
     </Paper>
