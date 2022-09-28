@@ -11,6 +11,7 @@ app.use(express.urlencoded({ limit: '30mb', extended: true }));
 app.use(cors());
 
 app.use('/posts', postsRoutes);
+
 const CONNECTION_URL = 'mongodb://localhost:27017/memories-project';
 const PORT = process.env.PORT || 5000;
 
