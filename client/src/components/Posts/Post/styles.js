@@ -1,6 +1,4 @@
-import { makeStyles } from '@mui/styles';
-
-export default makeStyles({
+const style = {
   media: {
     height: 0,
     paddingTop: '56.25%',
@@ -49,4 +47,6 @@ export default makeStyles({
     display: 'flex',
     justifyContent: 'space-between',
   },
-});
+};
+
+export default style;
