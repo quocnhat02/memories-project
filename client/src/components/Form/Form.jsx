@@ -19,7 +19,7 @@ const Form = () => {
       <form
         autoComplete="off"
         noValidate
-        style={`${styleComponent.root} ${styleComponent.form}`}
+        style={styleComponent.form}
         onSubmit={handleSubmit}
       >
         <Typography variant="h6">Creating a Memory</Typography>
